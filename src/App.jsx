@@ -6,6 +6,7 @@ import FriendDetails from "./pages/FriendDetails";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (

@@ -63,7 +63,7 @@ const Home = () => {
       {/* Friends List Section */}
       <section className="max-w-6xl mx-auto px-6 pb-20">
         <h3 className="text-xl font-bold mb-6">Your Friends</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {friends.map((friend) => (
             <FriendCard key={friend.id} friend={friend} />
           ))}
