@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "Nishita Sarkar",
+    "picture": "https://i.pravatar.cc/150?img=32",
+    "email": "nishita.sarkar@example.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["College", "Close Friend"],
+    "bio": "A great companion from university days. We both love classical music and literature.",
+    "goal": 14,
+    "next_due_date": "2026-04-28"
+  },
+  {
+    "id": 2,
+    "name": "Muhtadi Mueen",
+    "picture": "https://i.pravatar.cc/150?img=4",
+    "email": "muhtadi.mueen@example.com",
+    "days_since_contact": 25,
+    "status": "overdue",
+    "tags": ["School", "Best Friend"],
+    "bio": "My childhood best friend. We've known each other since we were five.",
+    "goal": 15,
+    "next_due_date": "2026-04-05"
+  },
+  {
+    "id": 3,
+    "name": "Junayra Jaria",
+    "picture": "https://i.pravatar.cc/150?img=5",
+    "email": "junayra.jaria@example.com",
+    "days_since_contact": 8,
+    "status": "almost due",
+    "tags": ["University", "Tech"],
+    "bio": "An amazing coder and a brilliant mind. We worked together on many projects.",
+    "goal": 10,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 4,
+    "name": "Sohanur Sonnet",
+    "picture": "https://i.pravatar.cc/150?img=12",
+    "email": "sohanur.sonnet@example.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["Neighborhood", "Gaming"],
+    "bio": "My favorite gaming buddy. We spend our weekends conquering virtual worlds.",
+    "goal": 7,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 5,
+    "name": "Israt Jahan",
+    "picture": "https://i.pravatar.cc/150?img=20",
+    "email": "israt.jahan@example.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["Work", "Design"],
+    "bio": "A creative designer who always inspires me with her unique perspective.",
+    "goal": 14,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 6,
+    "name": "Moumita Mou",
+    "picture": "https://i.pravatar.cc/150?img=26",
+    "email": "moumita.mou@example.com",
+    "days_since_contact": 40,
+    "status": "overdue",
+    "tags": ["Photography", "Hometown"],
+    "bio": "A talented photographer. We share a passion for capturing beautiful sunsets.",
+    "goal": 30,
+    "next_due_date": "2026-03-10"
+  },
+  {
+    "id": 7,
+    "name": "Fatema Zinnah",
+    "picture": "https://i.pravatar.cc/150?img=42",
+    "email": "fatema.zinnah@example.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["Gym", "Fitness"],
+    "bio": "My workout partner. She keeps me motivated on the days I feel lazy.",
+    "goal": 7,
+    "next_due_date": "2026-04-22"
+  },
+  {
+    "id": 8,
+    "name": "Anya Forger",
+    "picture": "https://i.pravatar.cc/150?img=43",
+    "email": "anya.forger@example.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["Anime", "Art"],
+    "bio": "Always full of surprises and very energetic. Loves peanuts and drawing.",
+    "goal": 14,
+    "next_due_date": "2026-04-01"
+  },
+  {
+    "id": 9,
+    "name": "Damian Desmond",
+    "picture": "https://i.pravatar.cc/150?img=33",
+    "email": "damian.desmond@example.com",
+    "days_since_contact": 1,
+    "status": "on-track",
+    "tags": ["School", "Rival"],
+    "bio": "A bit competitive but a good person at heart. We study together sometimes.",
+    "goal": 7,
+    "next_due_date": "2026-04-20"
+  }
+]
