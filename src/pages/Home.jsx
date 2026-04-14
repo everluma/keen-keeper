@@ -8,10 +8,18 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    setLoading(true);
     fetch("/friends.json")
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) throw new Error("File Not Found");
+        return res.json();
+      })
       .then((data) => {
         setFriends(data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Fetch error:", err);
         setLoading(false);
       });
   }, []);
