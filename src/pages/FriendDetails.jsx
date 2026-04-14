@@ -17,12 +17,13 @@ const FriendDetails = () => {
   }, [id]);
 
   
-  const handleInteraction = (type) => {
+   const handleInteraction = (type) => {
     const newEntry = {
       id: Date.now(),
       friendId: id,
       friendName: friend.name,
       type: type,
+      title: `${type} with ${friend.name}`, 
       date: new Date().toLocaleDateString('en-GB', {
         day: 'numeric',
         month: 'short',
@@ -30,14 +31,13 @@ const FriendDetails = () => {
       })
     };
 
-    // local storage
     const existingTimeline = JSON.parse(localStorage.getItem("timeline") || "[]");
     const updatedTimeline = [newEntry, ...existingTimeline];
     localStorage.setItem("timeline", JSON.stringify(updatedTimeline));
 
-    //toast added
     toast.success(`${type} with ${friend.name} logged!`);
   };
+
 
   if (!friend) return <div className="text-center py-20">Loading details...</div>;
 
