@@ -57,6 +57,9 @@ const Home = () => {
         
       </section>
 
+      {/* hr added in here 
+       <hr className="w-full align-middle max-w-4xl border-gray-400 mb-8" /> */}
+
       {/* Friends List Section */}
       <section className="max-w-6xl mx-auto px-6 pb-20">
         <h3 className="text-xl font-bold mb-6">Your Friends</h3>
