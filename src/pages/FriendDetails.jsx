@@ -18,7 +18,31 @@ const FriendDetails = () => {
 
   const handleInteraction = (type) => {
     toast.success(`${type} with ${friend.name} logged!`);
-    // এখানে আমরা টাইমলাইনে ডাটা সেভ করার লজিক পরে যোগ করব
+
+    // data save logic
+
+    const handleInteraction = (type) => {
+  const newEntry = {
+    id: Date.now(),
+    friendId: id,
+    friendName: friend.name,
+    type: type, // Call, Text, or Video
+    date: new Date().toLocaleDateString('en-GB', {
+      day: 'numeric',
+      month: 'short',
+      year: 'numeric'
+    })
+  };
+
+  // ekhane ager data anbe ar notun jog korbe
+  
+  const existingTimeline = JSON.parse(localStorage.getItem("timeline") || "[]");
+  const updatedTimeline = [newEntry, ...existingTimeline];
+  localStorage.setItem("timeline", JSON.stringify(updatedTimeline));
+
+  toast.success(`${type} with ${friend.name} logged!`);
+};
+
   };
 
   if (!friend) return <div className="text-center py-20">Loading details...</div>;
