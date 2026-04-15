@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Tooltip } from "recharts";
 import {
   PieChart,
   Pie,
@@ -13,6 +14,24 @@ const Stats = () => {
     const data = JSON.parse(localStorage.getItem("timeline") || "[]");
     setTimeline(data);
   }, []);
+
+  if (timeline.length === 0) {
+  return (
+    <div className="bg-[#f3f4f6] min-h-screen px-10 py-16">
+      <div className="max-w-6xl mx-auto">
+
+        <h1 className="text-4xl font-bold mb-6">
+          Friendship Analytics
+        </h1>
+
+        <div className="bg-white p-10 rounded-3xl text-center">
+          No interaction data yet.
+        </div>
+
+      </div>
+    </div>
+  );
+}
 
   // count
   const call = timeline.filter((t) => t.type === "Call").length;
@@ -34,7 +53,7 @@ const Stats = () => {
       
       <div className="max-w-6xl mx-auto">
 
-          <h1 className="text-4xl font-bold mb-6 mx-w-6xl mx-auto">
+          <h1 className="text-4xl font-bold mb-6 max-w-6xl mx-auto">
             Friendship Analytics
           </h1>
 
@@ -45,7 +64,7 @@ const Stats = () => {
         {/* Header */}
         <div className="mb-10">
           
-          <p className="text-gray font-bold">
+          <p className="text-gray-500 font-semibold">
             By Interaction Type
           </p>
         </div>
@@ -66,6 +85,7 @@ const Stats = () => {
                     <Cell key={index} fill={COLORS[index]} />
                   ))}
                 </Pie>
+                <Tooltip />
               </PieChart>
             </ResponsiveContainer>
           </div>
