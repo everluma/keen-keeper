@@ -13,7 +13,7 @@ const Navbar = () => {
       : "flex items-center gap-2 px-3 py-2 rounded-md hover:bg-green-900 hover:text-white transition";
 
   return (
-    <div className="flex justify-between items-center px-12 py-4 bg-white shadow">
+    <div className="flex flex-col md:flex-row justify-between items-center px-6 md:px-12 py-4 gap-4 bg-white shadow">
       
       {/* Logo */}
       <img src={logo} alt="KeenKeeper logo" className="w-32" />
