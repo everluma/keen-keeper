@@ -31,16 +31,17 @@ const Timeline = () => {
 
       {/* Filter select */}
       <div className="mb-6">
-        <select
-          value={filter}
-          onChange={(e) => setFilter(e.target.value)}
-          className="w-full md:w-64 px-4 py-2 border rounded-lg bg-white text-gray-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-green-700"
-        >
-          <option value="All">Filter timeline</option>
-          <option value="Call">Call</option>
-          <option value="Text">Text</option>
-          <option value="Video">Video</option>
-        </select>
+        
+       <select
+  value={filter}
+  onChange={(e) => setFilter(e.target.value)}
+  className="w-full md:w-64 px-4 py-2 border rounded-lg bg-white text-gray-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-green-700"
+>
+  <option value="All">Filter timeline</option>
+  <option value="Call">Call</option>
+  <option value="Text">Text</option>
+  <option value="Video">Video</option>
+</select>
       </div>
 
       {/* Empty state */}
