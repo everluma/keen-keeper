@@ -41,6 +41,8 @@ const Home = () => {
       {/* Banner Section */}
       <section className="bg-[#f3f4f6] py-12 px-6 text-center border border-gray-300 mb-6">
         <h1 className="text-4xl font-bold text-gray-900 mb-2">Friends to keep close in your life</h1>
+
+        <h2>checking for netlify live link</h2>
         <p className="text-gray-600 mb-8 max-w-xl mx-auto">
           Your Personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.
         </p>
