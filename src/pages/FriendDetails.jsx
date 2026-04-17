@@ -35,7 +35,8 @@ const FriendDetails = () => {
     const updatedTimeline = [newEntry, ...existingTimeline];
     localStorage.setItem("timeline", JSON.stringify(updatedTimeline));
 
-    toast.success(`${type} with ${friend.name} logged!`);
+// Here toast data 
+    toast.success(`${type} with ${friend.name} added to timeline`);
   };
 
 
