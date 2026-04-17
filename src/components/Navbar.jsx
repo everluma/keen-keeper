@@ -19,7 +19,7 @@ const Navbar = () => {
       <img src={logo} alt="KeenKeeper logo" className="w-32" />
 
       {/* Links */}
-      <div className="flex gap-4">
+      <div className="flex gap-4 flex-wrap justify-center">
         <NavLink to="/" className={navStyle}>
           <FaHome /> Home
         </NavLink>

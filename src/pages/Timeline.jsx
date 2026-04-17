@@ -3,7 +3,7 @@ import { HiPhone, HiChatAlt2, HiVideoCamera } from "react-icons/hi";
 
 const Timeline = () => {
   const [entries, setEntries] = useState([]);
-  const [filter, setFilter] = useState("All");
+const [filter, setFilter] = useState("");
 
   useEffect(() => {
     const savedTimeline = JSON.parse(
@@ -21,9 +21,9 @@ const Timeline = () => {
 
   // filter logic
   const filteredEntries =
-    filter === "All"
-      ? entries
-      : entries.filter((e) => e.type === filter);
+  filter === "" || filter === "All"
+    ? entries
+    : entries.filter((e) => e.type === filter);
 
   return (
     <div className="max-w-4xl mx-auto px-6 py-10">
@@ -37,7 +37,8 @@ const Timeline = () => {
   onChange={(e) => setFilter(e.target.value)}
   className="w-full md:w-64 px-4 py-2 border rounded-lg bg-white text-gray-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-green-700"
 >
-  <option value="All">Filter timeline</option>
+  <option value="" disabled>Filter timeline</option>
+  <option value="All">All</option>
   <option value="Call">Call</option>
   <option value="Text">Text</option>
   <option value="Video">Video</option>
