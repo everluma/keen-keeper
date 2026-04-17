@@ -15,7 +15,7 @@ const FriendCard = ({ friend }) => {
       onClick={() => navigate(`/friend/${friend.id}`)}
       className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all cursor-pointer flex flex-col items-center text-center border border-gray-100"
     >
-      {/* Round Picture */}
+      {/* Picture */}
       <img 
         src={friend.picture} 
         alt={friend.name}
@@ -35,7 +35,7 @@ const FriendCard = ({ friend }) => {
         ))}
       </div>
 
-      {/* Status Button-like Tag */}
+      {/* Status Button */}
       <span className={`px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider ${statusStyles[friend.status]}`}>
         {friend.status}
       </span>

@@ -49,7 +49,7 @@ const Stats = () => {
   
 
   return (
-    <div className="bg-[#f3f4f6] min-h-screen px-10 py-16">
+    <div className="bg-[#f3f4f6] min-h-screen px-6 md:px-10 py-10 md:py-16">
       
       <div className="max-w-6xl mx-auto">
 
